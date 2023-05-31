@@ -1,7 +1,7 @@
 function goToPage(pageName) {
     switch (pageName) {
         case "home":
-            window.location.href = "../index.html";
+            window.location.href = "index.html";
             break;
         case "work":
             window.location.href = "../index.html#mywork";
@@ -29,4 +29,35 @@ function goToPage(pageName) {
             break;
     }
 
+}
+
+// When the user scrolls the page, execute myFunction
+window.onscroll = function() { myFunction(); };
+
+// Get the header
+var header = document.getElementById("menuBtn");
+
+// Get the offset position of the navbar
+var sticky = header.offsetTop;
+
+// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+    if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+    } else {
+        header.classList.remove("sticky");
+    }
+}
+
+function showMenu() {
+    const showPanel = [
+        { width: "100%" }
+    ];
+
+    const timing = {
+        duration: 2000,
+        iterations: 1,
+    };
+    var menuPanel = document.getElementById("menu-panel");
+    menuPanel.animate(showPanel);
 }
