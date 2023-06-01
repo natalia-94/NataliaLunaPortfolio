@@ -20,13 +20,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;800&family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet"> -->
 
     <!-- Font awesome -->
-    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script> -->
 
     <!-- https://colorhunt.co/palette/79b4b7fefbf3f8f0df9d9d9d -->
 </head>
 
 <body>
-    <div class="menu-button" id="menuBtn" onclick="showMenu()">
+    <div class="menu-button" id="menuBtn">
         <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 397.27 395.83"><title>Menu Icon</title>
             <rect class="square" width="175.57" height="175.57" rx="29.31"/>
             <rect class="square" x="221.7" width="175.57" height="175.57" rx="29.31"/>
@@ -36,10 +36,14 @@
     </div>
 
     <div class="menu-panel" id="menu-panel">
-        <div>Home</div>
-        <div>About me</div>
-        <div>My work</div>
-        <div>Contact</div>
+        <div class="vertical-horizontal-center">
+            <ul>
+                <li><a class="underlined-text-animation" onclick="hideMenu()" href="#presentation">Home</a></li>
+                <li><a class="underlined-text-animation" onclick="hideMenu()" href="#about">About me</a></li>
+                <li><a class="underlined-text-animation" onclick="hideMenu()" href="#work">My work</a></li>
+                <li><a class="underlined-text-animation" onclick="hideMenu()" href="#contact">Contact</a></li>
+            </ul>
+        </div>
     </div>
 
     <div class="top-container" id="presentation">
@@ -64,7 +68,7 @@
 
     <div class="my-work-container" id="work">
         <div class="row justify-content-center">
-            <div class="col-md-3 work-info-container">
+            <div class="col-md-3 work-info-container" onclick="goToPage('virtualReality')">
                 <img class="work-img" src="images\vr\VRCover.png" alt="Virtual Reality">
                 <div class="work-text-container vertical-horizontal-center">
                     <h2 class="normal-subtitle"><span class="bold-subtitle">Towers</span><br>VR</h2>
@@ -104,18 +108,26 @@
             </div>
         </div>
     </div>
-    <div class="contact-container" id="contact">
-        <h2 class="bold-subtitle">Let's talk!</h2>
-        <h2 class="normal-subtitle"> Let me know if you are interested in working with me.</h2>
-        <a href="mailto:lunap.natalia@gmail.com?subject=Information request">
-            <button class="btn email-btn">E-mail</button>
-        </a>
-        <a class="" href="https://www.linkedin.com/">LinkedIn</a>
-        <a class="" href="https://twitter.com/">Twitter</a>
+    <div class="contact-container full-height" id="contact">
+        <div class="vertical-horizontal-center contact-text-colour">
+            <h2 class="big-title">Let's talk!</h2>
+            <span class="link-container">
+                <svg class="icon" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 63.7 68.09"><title>diagonal-right-arrow</title>
+                    <path d="M61.32,16.13H48.47c-.6,0-1.21,0-1.81,0a3.65,3.65,0,0,1-3.46-3.74A3.46,3.46,0,0,1,46.73,9c3.7-.08,7.4,0,11.11,0s7.56,0,11.33,0c2.63,0,3.88,1.44,3.87,4.21q0,11-.08,22.09a17.89,17.89,0,0,1,0,1.94c-.25,2.23-1.73,3.65-3.62,3.51s-3-1.62-3-3.85c-.05-4.13,0-8.26,0-12.38V21.39c-.94.88-1.51,1.35-2,1.89L16.16,74.79a15,15,0,0,1-1.29,1.36A3.11,3.11,0,0,1,10.34,76a3.58,3.58,0,0,1-.14-4.81c1.41-1.69,3-3.25,4.45-4.85L59.71,18.09C60.12,17.65,60.48,17.16,61.32,16.13Z" transform="translate(-9.34 -8.96)"/>
+                </svg>
+                <a class="contact-link underlined-text-animation normal-subtitle" href="mailto:lunap.natalia@gmail.com?subject=Information request">E-mail</a>
+            </span>
+            <span class="link-container">
+                <svg class="icon" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 63.7 68.09"><title>diagonal-right-arrow</title>
+                    <path d="M61.32,16.13H48.47c-.6,0-1.21,0-1.81,0a3.65,3.65,0,0,1-3.46-3.74A3.46,3.46,0,0,1,46.73,9c3.7-.08,7.4,0,11.11,0s7.56,0,11.33,0c2.63,0,3.88,1.44,3.87,4.21q0,11-.08,22.09a17.89,17.89,0,0,1,0,1.94c-.25,2.23-1.73,3.65-3.62,3.51s-3-1.62-3-3.85c-.05-4.13,0-8.26,0-12.38V21.39c-.94.88-1.51,1.35-2,1.89L16.16,74.79a15,15,0,0,1-1.29,1.36A3.11,3.11,0,0,1,10.34,76a3.58,3.58,0,0,1-.14-4.81c1.41-1.69,3-3.25,4.45-4.85L59.71,18.09C60.12,17.65,60.48,17.16,61.32,16.13Z" transform="translate(-9.34 -8.96)"/>
+                </svg>
+                <a class="contact-link underlined-text-animation normal-subtitle" href="https://www.linkedin.com/in/natalia-luna-preciado-53876b1a2/">LinkedIn</a>
+            </span>
+        </div>
     </div>
 
 
-    <div class="bottom-container">
+    <div class="footer-container">
         <p class="copy-right-text">© 2023 Natalia Luna</p>
     </div>
 
@@ -129,141 +141,3 @@
 </body>
 
 </html>
-<!-- <body>
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="navbar-costume-link" href="#aboutme">about me</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="navbar-costume-link" href="#mywork">my work</a></li>
-                    </li>
-                    <li class="nav-item">
-                        <a class="navbar-costume-link" href="#contactar">contact</a></li>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <main>
-        <section id="presentation">
-            <div class="top-container">
-                <h1 class="big-title-text">natalia<br>luna</h1>
-                <p class="big-subtitle-text">programmer . video editor</p>
-            </div>
-        </section>
-
-
-        <section id="aboutme">
-            <div class="middle-container">
-                <h2 class="section-title white-text presentation-title">This is me!</h2>
-                <img class="profile-img" src="images/nataliaCoffeeDARK.png" alt="profile-photo">
-                <div class="about-me-container">
-                    <p class="white-text me-section-text">
-                        Natalia Luna is a Computer Systems Engineer and Multimedia Creator based in Obregon, Sonora. She studied Computer Systems Engineering at the Instituto Tecnologico Superior de Cajeme (ITESCA) specialising in Multimedia Production. She continued her preparation
-                        with courses about Web Development, video production, 3D Animation and Stop Motion animation, and different programming languages like C#. She is now pursuing a Specialization in Virtual Reality by Goldsmiths University of London.
-                        She has worked for local artists as their video producer and video editor, and is currently working as a Software developer at Iron Mountain.<br> Natalia also spends time practicing and sometimes teaching
-                        dance, an activity that has helped to shape her disciplined character and to believe that with effort and perseverance it is possible to achieve her goals.
-
-                    </p>
-                    <p class="white-text me-section-text">
-                        Any question is welcome. Feel free to send a message!
-                    </p>
-                </div>
-            </div>
-        </section>
-
-
-        <section id="mywork">
-            <div class=" container bottom-container">
-                <h2 class="section-title work-title">This is what I do!</h2>
-
-                <div class="row skill-row">
-                    <div class="col-lg-4 col-md-6 mt-5">
-                        <div class="card card-container">
-                            <img src="Images/vr.png" class="card-img-top card-img" alt="Virtual Reality Icon">
-                            <div class="card-body">
-                                <h5 class="card-title">Virtual Reality</h5>
-                                <button class="btn btn-work" onclick="goToPage('virtualReality')">See more</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 mt-5">
-                        <div class="card card-container">
-                            <img src="Images/webdev.png" class="card-img-top card-img" alt="Web Development Icon">
-                            <div class="card-body">
-                                <h5 class="card-title">Web Development</h5>
-                                <button class="btn btn-work" onclick="goToPage('webDev')">See more</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 mt-5">
-                        <div class="card card-container">
-                            <img src="Images/video.png" class="card-img-top card-img" alt="Video Edition Icon">
-                            <div class="card-body">
-                                <h5 class="card-title">Video Edition</h5>
-                                <button class="btn btn-work" onclick="goToPage('videoEdition')">See more</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 mt-5">
-                        <div class="card card-container">
-                            <img src="Images/animation.png" class="card-img-top card-img" alt="Animation Icon">
-                            <div class="card-body">
-                                <h5 class="card-title">Animation</h5>
-                                <button class="btn btn-work" onclick="goToPage('animation')">See more</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 mt-5">
-                        <div class="card card-container">
-                            <img src="Images/ui.png" class="card-img-top card-img" alt="UX/UI Icon">
-                            <div class="card-body">
-                                <h5 class="card-title">UX/UI</h5>
-                                <button class="btn btn-work" onclick="goToPage('uxui')">See more</button>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <hr>
-
-        <section id="contactar">
-            <div class="contactar-container container">
-                <h2 class="section-title contact-title">Let's talk!</h2>
-                <p> Let me know if you are interested in working with me.</p>
-                <a href="mailto:lunap.natalia@gmail.com?subject=Information request">
-                    <button class="btn email-btn">E-mail</button>
-                </a>
-            </div>
-            <div class="contUpBtn">
-                <a href="#top">
-                    <button class="btn-Up"><i class="fas fa-arrow-up"></i></button>
-                </a>
-            </div>
-        </section>
-    </main>
-
-    <script src="scripts/index.js"></script>
-</body> -->
-<!-- <footer>
-    <div class="footer-container">
-        <a class="footer-link" href="https://www.linkedin.com/in/natalia-luna-preciado-53876b1a2/">LinkedIn</a>
-        <a class="footer-link" href="https://twitter.com/NataliaLunap">Twitter</a>
-        <p class="copy-right-text">© 2022 Natalia Luna.</p>
-        <a class="footer-link" href="https://www.flaticon.com/free-icons/animation" title="animation icons">Animation icons created by Freepik - Flaticon</a>
-    </div>
-</footer> -->
