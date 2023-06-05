@@ -7,7 +7,7 @@ font-family: 'Poppins', sans-serif; */
     body {
         margin: 0;
         height: 100%;
-        overflow: hidden;
+        /* overflow: hidden; */
         /* cursor: url(myBall.cur), auto; */
     }
     
@@ -62,9 +62,14 @@ font-family: 'Poppins', sans-serif; */
     }
     /* GENERAL TEXTS */
     
-    .big-title {
+    .jumbo-title {
         font-size: 3.5rem;
         font-weight: 700;
+    }
+    
+    .big-bold-uppercase-title {
+        font-weight: 700;
+        text-transform: uppercase;
     }
     
     .normal-subtitle {
@@ -117,11 +122,17 @@ font-family: 'Poppins', sans-serif; */
     
     .menu-panel.active {
         z-index: 1;
+        height: 100%;
         transform: translateX(0);
     }
     
     .menu-button .square {
         fill: #ffffff;
+        r: 30;
+    }
+    
+    .square:hover {
+        r: 40;
     }
     
     .menu-panel ul li {
@@ -141,7 +152,6 @@ font-family: 'Poppins', sans-serif; */
     }
     
     .top-container-title {
-        font-family: 'Open Sans', sans-serif;
         font-weight: 700;
         text-transform: uppercase;
     }
@@ -168,6 +178,11 @@ font-family: 'Poppins', sans-serif; */
     
     .photo-container {
         position: relative;
+        text-align: center;
+    }
+    
+    .profile-img {
+        width: 30%;
     }
     
     .about-text {
@@ -182,13 +197,12 @@ font-family: 'Poppins', sans-serif; */
         font-size: 3.5rem;
         font-weight: 700;
         position: absolute;
-        bottom: 20px;
-        left: 140px;
+        bottom: 40px;
+        left: 220px;
     }
     
     .about-me-container {
         background-color: #000000;
-        /* background-color: #545454; */
     }
     /* WORK */
     
@@ -198,10 +212,6 @@ font-family: 'Poppins', sans-serif; */
     }
     
     .work-text-container {
-        /* position: absolute;
-        top: 3.5rem;
-        left: 5rem;
-        text-align: end; */
         text-align: center;
         transition: .5s ease;
         opacity: 0;
@@ -358,10 +368,19 @@ font-family: 'Poppins', sans-serif; */
             line-height: 90%;
         }
         .profile-img {
-            width: 30%;
-            position: absolute;
-            right: 30px;
-            top: 250px;
+            width: 60%;
+            margin-left: 20%;
+            position: unset;
+        }
+        .about-title {
+            bottom: 197px;
+            left: 42px;
+        }
+        .about-text {
+            padding: 20px 30px;
+        }
+        .about-me-container {
+            height: auto;
         }
         .me-section-text {
             padding: 30px 10px 30px 50px
@@ -369,20 +388,29 @@ font-family: 'Poppins', sans-serif; */
         .presentation-title {
             width: 100%;
         }
+        .work-img {
+            width: 90%;
+        }
     }
     
     @media(max-width:426px) {
-        .big-title-text {
-            font-size: 4rem;
-            line-height: 110%;
-            margin-top: 0;
-            margin-bottom: 0;
+        .about-title {
+            font-size: 2rem;
+            bottom: -10px;
+            left: 121px;
         }
-        .big-subtitle-text {
-            font-size: 1.3rem;
-            text-align: right;
-            margin-top: 0;
-            line-height: 90%;
+        .about-title {
+            color: #ffffff;
+            font-size: 2 rem;
+            font-weight: 700;
+            position: unset;
+        }
+        .about-text {
+            padding: 20px 20px;
+            text-align: center;
+        }
+        .photo-container {
+            text-align: center;
         }
         .middle-container {
             position: static;
@@ -395,11 +423,18 @@ font-family: 'Poppins', sans-serif; */
         }
         .about-me-container {
             width: 100%;
+            height: auto;
         }
         .me-section-text {
             padding: 30px 10px 30px 50px
         }
         .presentation-title {
             width: 100%;
+        }
+        .my-work-container {
+            height: auto;
+        }
+        .work-info-container {
+            margin: 40px 0;
         }
     }

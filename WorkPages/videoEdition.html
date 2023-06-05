@@ -11,6 +11,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
     <!--format to link a style CSS file-->
+    <link href="../css_files/style.css" type="text/css" rel="stylesheet">
     <link href="../css_files/pages-style.css" type="text/css" rel="stylesheet">
 
     <!--Link for the font-family-->
@@ -22,34 +23,30 @@
 </head>
 
 <body>
-    <header id="top" class="header-pages">
+    <div class="menu-button" id="menuBtn" onclick="goToPage('home')">
+        <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 63.7 63.7"><title>Main page</title>
+            <circle class="square" cx="31.85" cy="31.85"/>
+        </svg>
+        <!-- <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 397.27 395.83"><title>Menu Icon</title>
+            <rect class="square" width="175.57" height="175.57" rx="29.31"/>
+            <rect class="square" x="221.7" width="175.57" height="175.57" rx="29.31"/>
+            <rect class="square" y="220.26" width="175.57" height="175.57" rx="29.31"/>
+            <rect class="square" x="221.7" y="220.26" width="175.57" height="175.57" rx="29.31"/>
+        </svg> -->
+    </div>
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="navbar-costume-link" href="../index.html#aboutme">about me</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="navbar-costume-link" href="../index.html#mywork">my work</a></li>
-                        </li>
-                        <li class="nav-item">
-                            <a class="navbar-costume-link" href="../index.html#contactar">contact</a></li>
-                        </li>
-                    </ul>
-                    <div class="d-flex">
-                        <h1 class="small-title-text" onclick="goToPage('home')">natalia<br>luna</h1>
-                    </div>
-                </div>
-            </div>
-        </nav>
-    </header>
+    <!-- <div class="menu-panel" id="menu-panel">
+        <div class="vertical-horizontal-center">
+            <ul>
+                <li><a class="underlined-text-animation" onclick="hideMenu()" href="../index.html">Home</a></li>
+                <li><a class="underlined-text-animation" onclick="hideMenu()" href="../index.html#about">About me</a></li>
+                <li><a class="underlined-text-animation" onclick="hideMenu()" href="../index.html#work">My work</a></li>
+                <li><a class="underlined-text-animation" onclick="hideMenu()" href="../index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div> -->
     <div class="container-fluid main-container">
-        <h1 class="title">Video Edition</h1>
+        <h1 class="mt-5 big-bold-uppercase-title">Video Edition</h1>
 
         <p class="desc-text">These are some videos made for the Introduction to montage and video editing course in Udemy. During this course, different exercises were developed in order to learn the basics of professional video production. The videos are for showing the
             edition, the material was provided by the course teachers.
@@ -73,42 +70,18 @@
             <iframe class="video-element w-100" src="https://www.youtube.com/embed/9EaInm3JcgQ" title="YouTube video player" allowfullscreen></iframe>
         </div>
 
-        <!-- <div id="projectPhotosCarousel" class="carousel slide carousel-project horizontal-margin-align" data-bs-interval="false" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="../images/livingRoom.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="../images/natalia_danza.PNG" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="../images/natalia_startup.PNG" class="d-block w-100" alt="...">
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#projectPhotosCarousel" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#projectPhotosCarousel" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-        </div> -->
-
-
     </div>
 
+    <div class="footer-container">
+        <p class="copy-right-text">© 2023 Natalia Luna</p>
+    </div>
 
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-    <!-- SCRIPTS -->
     <script src="../scripts/index.js"></script>
 </body>
-<footer>
-    <div class="footer-container">
-        <a class="footer-link" href="https://www.linkedin.com/in/natalia-luna-preciado-53876b1a2/">LinkedIn</a>
-        <a class="footer-link" href="https://twitter.com/NataliaLunap">Twitter</a>
-        <p class="copy-right-text">© 2022 Natalia Luna.</p>
-    </div>
-</footer>
 
 </html>

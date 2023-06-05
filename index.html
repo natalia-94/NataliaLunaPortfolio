@@ -19,23 +19,22 @@
     <!-- <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Montserrat:wght@300;400;600&family=Sacramento&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;800&family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet"> -->
 
-    <!-- Font awesome -->
-    <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script> -->
-
-    <!-- https://colorhunt.co/palette/79b4b7fefbf3f8f0df9d9d9d -->
 </head>
 
 <body>
-    <div class="menu-button" id="menuBtn">
-        <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 397.27 395.83"><title>Menu Icon</title>
+    <div class="menu-button" id="menuBtn" onclick="goToPage('homeFromHome')">
+        <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 63.7 63.7"><title>Main page</title>
+            <circle class="square" cx="31.85" cy="31.85"/>
+        </svg>
+        <!-- <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 397.27 395.83"><title>Menu Icon</title>
             <rect class="square" width="175.57" height="175.57" rx="29.31"/>
             <rect class="square" x="221.7" width="175.57" height="175.57" rx="29.31"/>
             <rect class="square" y="220.26" width="175.57" height="175.57" rx="29.31"/>
             <rect class="square" x="221.7" y="220.26" width="175.57" height="175.57" rx="29.31"/>
-        </svg>
+        </svg> -->
     </div>
 
-    <div class="menu-panel" id="menu-panel">
+    <!-- <div class="menu-panel" id="menu-panel">
         <div class="vertical-horizontal-center">
             <ul>
                 <li><a class="underlined-text-animation" onclick="hideMenu()" href="#presentation">Home</a></li>
@@ -44,11 +43,12 @@
                 <li><a class="underlined-text-animation" onclick="hideMenu()" href="#contact">Contact</a></li>
             </ul>
         </div>
-    </div>
+    </div> -->
+
 
     <div class="top-container" id="presentation">
         <div class="vertical-horizontal-center ">
-            <h1 class="top-container-title"><span class="top-gray-text">Hello, I am</span><br><span class="top-black-text ">Natalia Luna</span></h1>
+            <h1 class="big-bold-uppercase-title"><span class="top-gray-text">Hello, I am</span><br><span class="top-black-text ">Natalia Luna</span></h1>
             <h2 class="normal-subtitle">Front-End Web developer <span class="dot"></span> VR Developer <span class="dot"></span> Designer</h2>
             <p class="general-text bottom-page-align">Based in Limerick, Ireland</p>
         </div>
@@ -56,12 +56,15 @@
 
     <div class="about-me-container" id="about">
         <div class="row full-height">
-            <div class="col-6 photo-container">
+            <div class="col-md-6 photo-container">
                 <p class="about-title">About me</p>
+                <img class="profile-img" src="images/profile-picture.jpg" alt="">
             </div>
-            <div class="col-6 about-text general-text">
-                Studied Computer Systems Engineering specialized in Multimedia Production at ITESCA in Ciudad Obregón, Sonora, México. Currently specialized in Virtual reality by Goldsmiths, University of London. Passion, responsible and dedicated, enjoy working with
-                teams.
+            <div class="col-md-6 about-text general-text">
+                Studied Computer Systems Engineering specialised in Multimedia Production at ITESCA in Ciudad Obregón, Sonora, México. She studied a specialisation in Virtual reality by Goldsmiths, University of London through the coursera platform as well as the VR
+                Path by Unity Learn. Currently, she is studying the UX program from Google through the Coursera Platform. Passion, responsible, empathetic, and dedicated. She is interested in the user needs and founds fascinating the user behavior when
+                it comes to the testing phase. She has worked for companies like Iron Mountain and Mphasis as a Web Developer. Also, she has a great interest in arts and has been part of artistic projects. This experience allows her to bring an creative
+                perspective to the projects. Currently she is living in Limerick, Ireland.
             </div>
         </div>
     </div>
@@ -74,13 +77,13 @@
                     <h2 class="normal-subtitle"><span class="bold-subtitle">Towers</span><br>VR</h2>
                 </div>
             </div>
-            <div class="col-md-3 work-info-container">
+            <div class="col-md-3 work-info-container" onclick="goToPage('webDev')">
                 <img class="work-img" src="images\publicServicesProject\publicServiceCover.png" alt="Public Services App">
                 <div class="work-text-container vertical-horizontal-center">
                     <h2 class="normal-subtitle"><span class="bold-subtitle">Public Services</span><br>Web App</h2>
                 </div>
             </div>
-            <div class="col-md-3 work-info-container">
+            <div class="col-md-3 work-info-container" onclick="goToPage('illustration')">
                 <img class="work-img" src="images\Illustration\illustrationCover.png" alt="Illustration">
                 <div class="work-text-container vertical-horizontal-center">
                     <h2 class="normal-subtitle"><span class="bold-subtitle">Suma Song ad</span><br>Illustration</h2>
@@ -88,19 +91,19 @@
             </div>
         </div>
         <div class="row mt-5 justify-content-center">
-            <div class="col-md-3 work-info-container">
+            <div class="col-md-3 work-info-container" onclick="goToPage('animation')">
                 <img class="work-img" src="images\StopMotion\stopMotionCover.png" alt="Stop motion">
                 <div class="work-text-container vertical-horizontal-center">
                     <h2 class="normal-subtitle"><span class="bold-subtitle">Stop Motion</span><br>Animation</h2>
                 </div>
             </div>
-            <div class="col-md-3 work-info-container">
+            <div class="col-md-3 work-info-container" onclick="goToPage('videoEdition')">
                 <img class="work-img" src="images\videoEdition\videoEditionCover.png" alt="Product Ad video edition">
                 <div class="work-text-container vertical-horizontal-center">
                     <h2 class="normal-subtitle"><span class="bold-subtitle">Product Ad</span><br>Video edition</h2>
                 </div>
             </div>
-            <div class="col-md-3 work-info-container">
+            <div class="col-md-3 work-info-container" onclick="goToPage('uxui')">
                 <img class="work-img" src="images\health2Go\healthToGoCover.png" alt="Health To Go Mobil App">
                 <div class="work-text-container vertical-horizontal-center">
                     <h2 class="normal-subtitle"><span class="bold-subtitle">Health2Go</span><br>UI/UX Design</h2>

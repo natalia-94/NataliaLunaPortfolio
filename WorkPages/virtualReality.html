@@ -11,6 +11,7 @@
 
     <!--format to link a style CSS file-->
     <link href="../css_files/style.css" type="text/css" rel="stylesheet">
+    <link href="../css_files/pages-style.css" type="text/css" rel="stylesheet">
 
     <!--Link for the font-family-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,39 +23,38 @@
 </head>
 
 <body>
-    <div class="menu-button" id="menuBtn">
-        <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 397.27 395.83"><title>Menu Icon</title>
-                <rect class="square" width="175.57" height="175.57" rx="29.31"/>
-                <rect class="square" x="221.7" width="175.57" height="175.57" rx="29.31"/>
-                <rect class="square" y="220.26" width="175.57" height="175.57" rx="29.31"/>
-                <rect class="square" x="221.7" y="220.26" width="175.57" height="175.57" rx="29.31"/>
-            </svg>
+    <div class="menu-button" id="menuBtn" onclick="goToPage('home')">
+        <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 63.7 63.7"><title>Main page</title>
+            <circle class="square" cx="31.85" cy="31.85"/>
+        </svg>
+        <!-- <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 397.27 395.83"><title>Menu Icon</title>
+            <rect class="square" width="175.57" height="175.57" rx="29.31"/>
+            <rect class="square" x="221.7" width="175.57" height="175.57" rx="29.31"/>
+            <rect class="square" y="220.26" width="175.57" height="175.57" rx="29.31"/>
+            <rect class="square" x="221.7" y="220.26" width="175.57" height="175.57" rx="29.31"/>
+        </svg> -->
     </div>
 
-    <div class="menu-panel" id="menu-panel">
+    <!-- <div class="menu-panel" id="menu-panel">
         <div class="vertical-horizontal-center">
             <ul>
-                <li><a class="underlined-text-animation" onclick="goToPage('home')" href="">Home</a></li>
-                <li><a class="underlined-text-animation" onclick="hideMenu()" href="#about">About me</a></li>
-                <li><a class="underlined-text-animation" onclick="hideMenu()" href="#work">My work</a></li>
-                <li><a class="underlined-text-animation" onclick="hideMenu()" href="#contact">Contact</a></li>
+                <li><a class="underlined-text-animation" onclick="hideMenu()" href="../index.html">Home</a></li>
+                <li><a class="underlined-text-animation" onclick="hideMenu()" href="../index.html#about">About me</a></li>
+                <li><a class="underlined-text-animation" onclick="hideMenu()" href="../index.html#work">My work</a></li>
+                <li><a class="underlined-text-animation" onclick="hideMenu()" href="../index.html#contact">Contact</a></li>
             </ul>
         </div>
-    </div>
+    </div> -->
 
-    <div class="top-container" id="presentation">
-        <!-- <div class="vertical-horizontal-center ">
-            <h1 class="top-container-title"><span class="top-gray-text">Hello, I am</span><br><span class="top-black-text ">Natalia Luna</span></h1>
-            <h2 class="normal-subtitle">Front-End Web developer <span class="dot"></span> VR Developer <span class="dot"></span> Designer</h2>
-            <p class="general-text bottom-page-align">Based in Limerick, Ireland</p>
-        </div> -->
-        <h1 class="title">Virtual Reality</h1>
-        <h2 class="subtitle">Interactive Living Room <small>(2022)</small></h2>
+    <div class="main-container">
+        <h1 class="mt-5 big-bold-uppercase-title">Virtual Reality</h1>
+        <h2 class="normal-subtitle">Towers <small>(2023)</small></h2>
+
         <div class="video-container">
-            <iframe class="video-element w-100" src="https://www.youtube.com/embed/NHEhFOiuarw"></iframe>
+            <iframe class="video-element w-100" src="https://www.youtube.com/embed/zKawA9Fa0hE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
         </div>
-        <p class="desc-text">This is my first VR project that depicts a living room. The user can grab objects, interact with them, and move across the room using the carpets on the floor (teleportation). This is a great environment for the user to get familiar with VR and
-            the concepts of grab and move objects in VR. Made in Unity.
+        <p class="desc-text">This project was made as a result of the specialised program Virtual Reality by Goldsmiths, University of London and Coursera platform. The whole experience was developed in Unity for an Oculus Quest 2. The main objective is to practice and learn
+            how to play the Hanoi Towers game where the user is able to grab the disks and let them fall in the desired stick. The user will remain in a stationary position and look around them.
         </p>
     </div>
 
